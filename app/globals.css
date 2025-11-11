@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Base font: Helvetica Neue fallback stack */
+/* :root { --header-height: 64px; } */
+body { font-family: "Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, sans-serif; }
+
+
+/**** Helpers ****/
+.brand-serif { font-family: var(--font-instrument-serif), serif; }
+.shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+
+
+/* Prevent content from sitting under the sticky header */
+main { padding-top: var(--header-height); }
+
+
+/* Smooth fonts */
+html, body { height: 100%; }
+
+/* Hide scrollbar globally */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  overflow-y: scroll; /* keeps layout stable */
+}
+
+/* @media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
+} */
