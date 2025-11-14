@@ -13,3 +13,8 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/tech-project-8/sticks.git
 git push -u origin main
+
+
+#languages/technologies used
+ TSX (TypeScript + JSX) + JavaScript + TailwindCSS + Next.js + Framer Motion
+ 
